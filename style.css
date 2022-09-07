@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #000b0f;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 100;
+  background: #495C83;
+  text-align: end;
+  padding-top: 15px;
+}
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.calculadora {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  background: #7A86B6;
+}
+
+input[type="button"] {
+  display: grid;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  background: #A8A4CE;
+  border-radius: 50%;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  font-size: 36px;
+  outline: none;
+  transition: 0.3s;
+  position: relative;
+}
+
+input[type="button"]:hover {
+  background: #C8B6E2;
+}
+
+input[type="button"]:hover.operadores-basicos {
+  background: #C8B6E2;
+}
+
+/* Resultado */
+
+.resultado {
+  position: relative;
+}
+
+.resultado input[type="text"] {
+  min-height: 150px;
+  width: 375px;
+  border: none;
+  outline: none;
+  background: #A8A4CE;
+  display: grid;
+  text-align: end;
+  font-size: 35px;
+  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+  justify-content: end;
+  align-items: end;
+  padding: 30px 20px 0;
+  border-radius: 20px 20px 0 0;
+}
+
+#igual:hover {
+  background: #C8B6E2;
+}
+
+/* Estruturação Numeros */
+
+.teclas {
+  display: grid;
+  grid-template-columns: 60px 60px 60px 60px;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* Numeros */
+
+input.operadores-basicos {
+  background: #6a7ea7;
+}
+
+#igual {
+  background: #6a7ea7;
+}
+
+#del {
+  font-size: 23px;
+}
+
+
